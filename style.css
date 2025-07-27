@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Angkor&family=Bokor&family=Exile&family=Kdam+Thmor+Pro&family=Khmer&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odor+Mean+Chey&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Suwannaphum:wght@100;300;400;700;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.container {
+  position: relative;
+  max-width: 1300px;
+  margin: auto;
+}
+.navbar {
+  width: 100%;
+  position: absolute;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand {
+  width: 200px;
+}
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.navbar-nav .nav-item .nav-link {
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #e6b504;
+}
+.hero-banner {
+  height: 740px;
+  align-content: center;
+  background-size: cover;
+}
+.banner-text {
+  color: white;
+  text-align: center;
+}
+.banner-text p {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 35px;
+}
+.banner-text h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.banner-text .btn {
+  margin-top: 50px;
+  border: none;
+  background-color: transparent;
+}
+.banner-text .btn a {
+  padding: 20px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  background-color: #ffc806;
+  text-decoration: none;
+}
+.banner-text .btn a:hover {
+  background-color: #e6b504;
+}
+/* ====================================service==================================== */
+.service {
+  margin-top: 50px;
+  padding-top: 100px;
+}
+.header-title {
+  margin-bottom: 50px;
+}
+.header-title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+.header-title p {
+  padding: 15px 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 22px;
+  color: #798896;
+  font-family: "Merriweather", serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-4 {
+  width: 33.33333333333333%;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+}
+.col-2 {
+  width: 16.66666666666667%;
+  padding-inline: 10px;
+  margin-bottom: 90px;
+}
+.col-3 {
+  width: 25%;
+  padding-inline: 10px;
+}
+.col-5 {
+  width: 41.66666666666667%;
+  padding-inline: 10px;
+  margin-bottom: 90px;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+  margin-bottom: 20px;
+  padding-inline: 20px;
+}
+.service-group {
+  padding: 35px 0;
+  text-align: center;
+}
+.service-group .service-icon {
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  border-radius: 100%;
+  display: flex;
+  background-color: #e6b504;
+  justify-content: center;
+  align-items: center;
+}
+.service-group .service-icon i {
+  color: white;
+  font-size: 60px;
+}
+.description-service h1 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px 0;
+}
+.description-service p {
+  font-size: 19px;
+  color: #798896;
+  font-family: "Merriweather", serif;
+}
+/* ====================================portfolio==================================== */
+.portfolio {
+  padding-top: 100px;
+}
+.portfolio-group {
+  padding-bottom: 25px;
+}
+.portfolio-group .portfolio-group-image {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.portfolio-group .portfolio-group-image::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.portfolio-group .portfolio-group-image:hover::after {
+  background-color: #ffc906ad;
+  display: block;
+}
+.portfolio-group .portfolio-group-image .portfolio-image img {
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.portfolio-group .portfolio-group-image button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: 45%;
+  left: 45%;
+  position: absolute;
+  display: none;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+  color: white;
+}
+.portfolio-group .portfolio-group-image:hover button {
+  display: block;
+  
+}
+.portfolio-group .description-portfolio {
+  text-align: center;
+}
+.description-portfolio h1 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px 0;
+}
+.description-portfolio p {
+  font-size: 19px;
+  color: #798896;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+}
+/* ====================================about==================================== */
+.about {
+  padding-top: 100px;
+}
+.about-grid {
+  margin-top: 50px;
+}
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-description {
+  width: 100%;
+  text-align: end;
+}
+.align-start {
+  text-align: start;
+}
+.about-description h1 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px 0;
+}
+.about-description p {
+  font-size: 18px;
+  color: #798896;
+  font-family: "Merriweather", serif;
+}
+.about-profile-image {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+.about-profile-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 100%;
+  cursor: pointer;
+}
+/* ====================================team==================================== */
+.team {
+  padding-top: 100px;
+}
+.team-image {
+  width: 230px;
+  height: 230px;
+  margin: auto;
+}
+.team-image img {
+  width: 100%;
+  height: 100%;
+  border: 8px solid #dee0e2;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.description-team {
+  text-align: center;
+}
+.description-team h1 {
+  font-family: "Roboto", sans-serif;
+  padding: 15px 0;
+}
+.description-team p {
+  font-size: 19px;
+  color: #798896;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+}
+.team-social ul {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+}
+.team-social ul li a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 100%;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  background-color: black;
+}
+.team-social ul li a:hover {
+  background-color: #9ca8b3;
+}
+.team > p {
+  text-align: center;
+  padding: 45px 0;
+  color: #798896;
+  font-family: "Roboto", sans-serif;
+}
+/* ====================================company==================================== */
+.company {
+  padding: 100px 0;
+}
+.company-image {
+  width: 250px;
+  height: 44px;
+  margin: auto;
+}
+.company-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* ====================================footer==================================== */
+.footer {
+  padding: 25px 0;
+}
+.footer .footer-text {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.footer .footer-social {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: black;
+}
+.footer .footer-social a {
+  display: block;
+}
+.footer .footer-social a i {
+  font-size: 30px;
+  color: white;
+}
+/* ====================================responsive==================================== */
+@media (max-width: 1300px) {
+  .navbar ,.footer{
+    padding-inline: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-toggle {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-inline: 50px;
+    background-color: #21262b;
+  }
+  .navbar-brand {
+    padding-left: 50px;
+  }
+  .navbar .navbar-nav {
+    width: calc(100% - 50px);
+    background-color: #21262b;
+    flex-direction: column;
+    margin: 20px auto;
+    display: none;
+  }
+  .navbar #navbar_toggle:checked + .navbar-nav {
+    display: block;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    margin-top: 10px;
+    width: 100%;
+    padding-block: 12px;
+    border: 1px solid #ddd;
+  }
+  .navbar .navbar-toggle {
+    padding: 8px 18px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    position: absolute;
+    color: white;
+    right: 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+  }
+  .service,
+  .portfolio,
+  .about {
+    padding: 0 50px;
+  }
+  .service .col-4,
+  .portfolio .col-4 {
+    width: 50%;
+    padding-inline: 15px;
+    margin-bottom: 20px;
+  }
+  .about .col-5 {
+    padding-inline: 25px;
+  }
+  .about-profile-image {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+  }
+  .team #text {
+    padding-inline: 50px;
+  }
+  .team .col-4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .company {
+    padding-inline: 50px;
+  }
+  .company-image {
+    width: 150px;
+    height: 44px;
+    margin: auto;
+  }
+  .footer .col-6 {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .footer .col-6 .footer-social {
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .service .col-4 {
+    width: 100%;
+    padding-inline: 15px;
+    margin-bottom: 20px;
+  }
+  .portfolio .col-4 {
+    width: 50%;
+    padding-inline: 15px;
+    margin-bottom: 20px;
+  }
+  .portfolio-group .portfolio-group-image {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+
+  .company .col-3 {
+    width: 50%;
+    padding-inline: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .portfolio .col-4 {
+    width: 100%;
+    padding-inline: 15px;
+    margin-bottom: 20px;
+  }
+  .portfolio-group .portfolio-group-image {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .company .col-3 {
+    width: 100%;
+    padding-inline: 15px;
+    margin-bottom: 20px;
+  }
+}
