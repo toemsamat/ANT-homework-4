@@ -175,9 +175,6 @@ header {
   font-family: "Merriweather", serif;
 }
 /* ====================================portfolio==================================== */
-.portfolio-area {
-  background-color: #f8f9fa;
-}
 .portfolio {
   padding-top: 100px;
 }
@@ -202,6 +199,7 @@ header {
   display: block;
 }
 .portfolio-group .portfolio-group-image .portfolio-image img {
+  
   position: absolute;
   width: 100%;
   height: 100%;
@@ -221,6 +219,7 @@ header {
 }
 .portfolio-group .portfolio-group-image:hover button {
   display: block;
+  
 }
 .portfolio-group .description-portfolio {
   text-align: center;
@@ -275,9 +274,6 @@ header {
   cursor: pointer;
 }
 /* ====================================team==================================== */
-.team-area {
-  background-color: #f8f9fa;
-}
 .team {
   padding-top: 100px;
 }
@@ -350,9 +346,6 @@ header {
   display: block;
 }
 /* ====================================footer==================================== */
-footer {
-  background-color: #f8f9fa;
-}
 .footer {
   padding: 25px 0;
 }
@@ -380,8 +373,7 @@ footer {
 }
 /* ====================================responsive==================================== */
 @media (max-width: 1300px) {
-  .navbar,
-  .footer {
+  .navbar ,.footer{
     padding-inline: 50px;
   }
 }
